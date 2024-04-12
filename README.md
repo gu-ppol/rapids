@@ -22,7 +22,13 @@ In this lab we will do some analysis the famous [NYC TLC](https://www.nyc.gov/si
 
 ## Activity 3: `RAPIDS`, left as an exercise for the curious student [OPTIONAL]
 
-Watch the video for setting up an Amazon SageMaker Notebook ([link](https://georgetown.instructure.com/courses/172712/discussion_topics/1135473)) and create a SageMaker Notebook with an `ml.g4dn.xlarge` instance type and `100 GB` disk space. Open Jupyter Lab and then a new terminal and create a new conda environment using the following command `conda create--solver=libmamba -n rapids-24.02 -c rapidsai -c conda-forge -c nvidia rapids=24.02 python=3.9 cuda-version=12.0 dask-sql jupyterlab`. Creating this conda environment usually takes 15 to 20 minutes. Now run the [`RAPIDS`](rapids.ipynb) notebook. This activity is optional, to be done by interested students on their own time, there is nothing to submit for this activity.
+Watch the video for setting up an Amazon SageMaker Notebook ([link](https://georgetown.instructure.com/courses/172712/discussion_topics/1135473)) and create a SageMaker Notebook with an `ml.g4dn.xlarge` instance type and `100 GB` disk space. Open Jupyter Lab and then a new terminal and create a new conda environment using the following command 
+
+```
+conda create --solver=libmamba -n rapids-24.02.1 -c rapidsai -c conda-forge -c nvidia rapids=24.02 python=3.9 cuda-version=12.0 dask-sql jupyterlab
+
+```
+.Creating this conda environment usually takes 15 to 20 minutes. Now run the [`RAPIDS`](rapids.ipynb) notebook. This activity is optional, to be done by interested students on their own time, there is nothing to submit for this activity.
 
 ## Submitting the Activity
 
